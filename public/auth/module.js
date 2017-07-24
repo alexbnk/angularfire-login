@@ -6,14 +6,16 @@ angular.module('app.auth', [
 
 
 
-
-
       var config = {
-          apiKey: '',
-          authDomain: '',
-          databaseURL: '',
-          storageBucket: ''
+          apiKey: 'AIzaSyCHohSWJsm2ujcVPdUYmvr_FrPbhRXMkG4',
+          authDomain: 'test1-a924d.firebaseapp.com',
+          databaseURL: 'https://test1-a924d.firebaseio.com',
+          storageBucket: 'test1-a924d.appspot.com'
       };
+      firebase.initializeApp(config);
+      console.log("firebase initialized");
+
+    
       firebase.initializeApp(config);
       console.log("firebase initialized");
 
