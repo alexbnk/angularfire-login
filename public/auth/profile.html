@@ -1,0 +1,67 @@
+<div class="container">
+	<div class="row">
+		 <form class="form">
+            <fieldset>
+                <!-- Address form -->
+
+                <h2>User Profile</h2>
+
+                <!-- first-name input-->
+                <div class="control-group">
+                    <label class="control-label">Firebase UID</label>
+                    <div class="controls">
+                        <input id="uid" style="width: 50% ; border : none" name="uid" type="text" ng-model="form.uid"
+                        class="input-xlarge">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+
+                <!-- last-name input-->
+                <div class="control-group">
+                    <label class="control-label">Email</label>
+                    <div class="controls">
+                        <input id="last-name" style="width: 50% ; border : none" name="email" type="email" ng-model="form.email"
+                        class="input-xlarge">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+
+
+
+                  <a href="" ng-click="toggle()" ng-show="!show">Change password</a>
+                  </fieldset>
+                    <fieldset ><!-- Change pass -->
+
+          <div class="well" ng-show="show">
+
+
+                <div class="control-group">
+                    <label class="control-label">Enter new password</label>
+                    <div class="controls">
+                        <input id="city" style="width: 50%; " name="password" type="text" placeholder="min. 6 chars" class="input-xlarge" ng-model="form.pass1">
+                         <p class="help-block"></p>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Verify new password</label>
+                    <div class="controls">
+                        <input id="city" style="width: 50%; " name="password" type="text" placeholder="min. 6 chars" class="input-xlarge" ng-model="form.pass2">
+                         <p class="help-block"></p>
+                    </div>
+                </div>
+                <!-- Save Cancel buttons -->
+
+                <div class="control-group">
+                    <button class="btn btn-primary" type="button" name="button" ng-enabled="">Save</button>
+                    <button class="btn btn-default" type="button" name="button" ng-click="toggle()">Cancel</button>
+
+                </div>
+
+
+              </div>
+<hr>
+            </fieldset>
+        </form>
+	</div>
+</div>
